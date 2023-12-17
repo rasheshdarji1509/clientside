@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* :root{
+  font-size: 62.5%;
+  
+} */
+
+html{
+  font: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+
+/* navbar start */
+.navbar {
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+.logo h1 {
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icon a i {
+  padding-top: 10px;
+  color: rgb(98, 91, 91);
+}
+
+/* navbar end */
+/* main sectin start */
+.main_section {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("image_main.jpg");
+  background-size: 100% 100%;
+}
+.main_section .content {
+  position: relative;
+
+  right: 150px;
+}
+.content h1 {
+
+  font-size: 3.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  color: rgb(51, 46, 46);
+}
+
+.content p {
+  padding-top: 20px;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(115, 106, 106);
+  font-size: 1rem;
+    font-weight: 500;
+}
+.free_pik {
+  padding-top: 20px;
+  font-family: monospace;
+
+  color: rgb(92, 84, 84);
+}
+
+#freepik{
+  color:rgb(30, 192, 192) ;
+  font-weight: 800;
+}
+.btn {
+  margin-top: 20px;
+}
+.btn button {
+  width: 10rem;
+  height: 2.7rem;
+  FONT-WEIGHT: 500;
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+}
+/* main section end */
+
+/* about section start */
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+}
+.about .symbol i {
+  font-size: 3rem;
+}
+.about_head h1 {
+  padding-top: 20px;
+  font-size: 2rem;
+  color: rgb(30, 27, 27);
+  font-family: sans-serif;
+  font-weight: 600;
+
+}
+.about_detail p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: system-ui;
+  width: 38rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: gray;
+}
+.about_btn{
+  margin-top: 20px;
+}
+
+.about_btn button {
+  padding-top: 30px;
+  height: 2.5rem;
+  width: 9rem;
+  background-color: transparent;
+  border: 2px solid gray;
+  padding: 5px;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* about section end */
+
+/* doing start */
+.doing {
+  background-color: rgb(50, 151, 151);
+}
+
+.doing .doing_main {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doing_img{
+  flex: 50%;
+    float: left;
+}
+
+.doing_img img {
+  display: block;
+  width: 50vw;
+  height: 70vh;
+}
+.doing_right{
+  flex: 50%;
+    /* float: left; */
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.doing_txt h1 {
+  FONT-WEIGHT: 700;
+  color: white;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  padding: 0.5rem;
+}
+.doing_txt p {
+  width: 20rem;
+  color: white;
+  font-family: monospace;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+.doing_txt button {
+  margin-top: 20px;
+  width: 9rem;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 10px;
+  letter-spacing: 0.03rem;
+  border-radius: 15px;
+  height: 2.2rem;
+  text-align: center;
+  color: rgb(50, 151, 151);
+  border: none;
+}
+
+/* doing end */
+
+/* services start */
+
+.Services {
+  text-align: center;
+  padding-top: 20px;
+}
+.Services h1 {
+  font-size: 1.6rem;
+  font-family: serif;
+  font-weight: 800;
+}
+.Services p {
+  color: gray;
+  font-family: sans-serif;
+  font-size: 2vh;
+  padding-top: 20px;
+}
+.Services .cards {
+  padding: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit,minmax(21rem,1fr)); */
+  grid-template-columns: auto auto auto;
+  gap: 1.5rem;
+  justify-content: center;
+  overflow-wrap: break-word;
+  align-items: center;
+}
+.Services .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+  padding: 20px;
+}
+.service_card_symbol i {
+  background-color: rgb(50, 151, 151);
+  height: 50px;
+  display: flex;
+
+  justify-content: center;
+  width: 50px;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+}
+.Services .card h2 {
+  font-size: 0.9rem;
+  font-family: monospace;
+  padding-top: 1rem;
+  color: gray;
+}
+.Services .card p {
+  font-style: italic;
+  width: 180px;
+  padding-top: 10px;
+}
+
+/* services end */
+
+/* communication start */
+.communication .communication_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.communication_main .communication_left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.communication_left__content h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.communication_left__content p {
+  padding-top: 15px;
+  font-size: 0.8rem;
+  width: 25rem;
+  font-family: monospace;
+}
+
+.communication_main .communication_left :nth-child(2){
+  font-weight: 800;
+}
+.communication_btmn{
+  padding-top: 20px;
+}
+.communication_btmn button {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 22px;
+  border: none;
+  font-size: 0.6rem;
+  font-family: monospace;
+  color: white;
+  background-color: rgb(50, 151, 151);
+}
+.communication_right img {
+  height: 70vh;
+  width: 50vw;
+}
+/* footer start */
+.footer{
+  background-color:rgb(50, 151, 151) ;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.footer_left h1{
+  font-size: 3vw;
+
+}
+.footer_left p {
+  padding-top: 10px;
+  font-size: 1.5vw;
+}
+.footer_right {
+  padding-left: 20px;
+}
+.footer_right button {
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  color: rgb(50, 151, 151);
+  font-size: 12px;
+  border-radius: 15px;
+  background-color:white ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* footer end */
+/* communication end */
+
+@media screen and (max-width: 768px) {
+  .parent_main{
+    height: 100vh;
+  }
+  .main_section .content {
+    position: relative;
+    right: 15px;
+}
+  .main_section {
+    height: 100dvh;
+    min-height: 100dvh;
+}
+.doing {
+  height: 70vh;
+  background-color: rgb(50, 151, 151);
+}
+.doing_img img {
+  display: block;
+  width: 100%;
+  height: 70vh;
+}
+.doing_txt button{
+  position: relative;
+  bottom: 10px;
+ 
+}
+.doing_txt h1{
+  font-size: 1.4rem;
+}
+.doing_txt p {
+  font-size: 0.8rem;
+  width: 20rem;
+;
+}
+.communication_left{
+  font-size: 0.9rem;
+}
+.communication_left p {
+  width: 15rem;
+  font-size: 0.7rem;
+
+}
+.communication_left__content h1{
+  font-size: 0.8rem;
+}
+.content h1{
+  font-size: 2.4rem;
+}
+.content p{
+  font-size: 0.8rem;
+}
+.about_detail p  {
+width: 30rem;
+font-size: 0.8rem;
+}
+  .btn button{
+    width: 152px;
+    height: 35px;
+    font-weight: 700;
+  }
+
+  .Services .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .communication_right img {
+    height: 70vh;
+    display: block;
+    width: 50vw;
+}
+.communication_main .communication_left {
+  width: 50vw;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+}
+@media screen and (max-width: 480px) {
+  .about .symbol i {
+    font-size: 2rem;
+}
+.about_head h1{
+  font-size: 1.5rem;
+}
+.about_detail p {
+  width: 20rem;
+  font-size: 0.7rem;
+}
+.about_btn button{
+  height: 2rem;
+    width: 7rem;
+    font-size: 0.7rem;
+}
+.doing .doing_main{
+  flex-flow: column;
+}
+.doing_img img {
+  display: block;
+  width: 100vw;
+  height: 50vh;
+}
+.doing_right{
+  flex: 100%;
+  padding: 10px;
+   
+    height: 50vh;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+}
+.communication_main{
+  flex-flow: column;
+}
+.communication_main .communication_left {
+  width: 100%;
+}
+.communication_right img{
+  width: 100%;
+}
+.Services .cards{
+  grid-template-columns: auto;
+}
+}
